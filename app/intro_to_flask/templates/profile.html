@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="jumbo">
+    <h2>Database<h2>
+    <h3>This is {{ session['email'] }}'s database page<h3>
+  </div>
+  <div style="height:50px;width:400px;">
+</div>
+
+<!--   <table class="table">
+  <thead>
+          <tr>
+            <th>uid</th>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>email</th>
+            <th>pwdhash</th>
+          </tr>
+	</thead>
+	<tbody>
+
+          {% for user in users %}
+          <tr>
+            <td>{{ user.uid }}</td>
+            <td>{{ user.firstname }}</td>
+            <td>{{ user.lastname }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.pwdhash }}</td>
+          </tr>
+          {% endfor %}
+      </tbody>   -->
+<!--  </table>
+<table class="table">
+  <thead>
+  	<tr>
+    	<th>topic</th>
+    </tr>
+  </thead>
+  <tbody>
+          {% for row in result %}
+          <tr>
+            <td>{{ row['topic_name'] }}</td>
+          </tr>
+          {% endfor %}
+    </tbody>  
+ </table>   -->
+
+<!--   </table> -->
+
+<b>INDEX</b>
+   <table class="table" border="1" style="border-collapse:collapse;text-align:center;">
+  <thead>
+  <col width="50">
+  <col width="130">
+  <col width="130">
+  <col width="130">
+  <col width="130">
+          <tr>
+            <th>iid</th>
+            <th>index1</th>
+            <th>index2</th>
+            <th>index3</th>
+            <th>index4</th>
+          </tr>
+  </thead>
+  <tbody>
+
+          {% for index in indexes_new %}
+          <tr>
+            <td>{{ index.iid }}</td>
+            <td>{{ index.index1 }}</td>
+            <td>{{ index.index2 }}</td>
+            <td>{{ index.index3}}</td>
+            <td>{{ index.index4 }}</td>
+          </tr>
+          {% endfor %}
+      </tbody>  
+  </table>
+
+<div style="height:50px;width:400px;">
+</div>
+
+<b>SOCIAL HEALTH INDEX</b>
+<table class="table" border="1" style="border-collapse:collapse;">
+	  <col width="50">
+  <col width="130">
+  <thead>
+  	<tr>
+    	<th>id</th>
+    	<th>date</th>
+    	<th>FB followers</th>
+    	<th>TW followers</th>
+    	<th>YT followers</th>
+    	<th>Gplus followers</th>
+    	<th>sum fans</th>
+    	<th>speed of growth</th>
+    	<th>FB fan growth speed</th>
+    	<th>TW fan growth speed</th>
+    	<th>fan growth index</th>
+    </tr>
+  </thead>
+  <tbody>
+          {% for row in result %}
+          <tr style="text-align:right;">
+            <td>{{ row['id'] }}</td>
+            <td style="text-align:center;">{{ row['date'] }}</td>
+            <td>{{ row['FB_Followers'] }}</td>
+            <td>{{ row['TW_Followers'] }}</td>
+            <td>{{ row['Youtube_Followers'] }}</td>
+            <td>{{ row['G_Plus_Followers'] }}</td>
+            <td>{{ row['sum_fans'] }}</td>
+            <td>{{ row['speed_of_growth'] }}</td>
+            <td>{{ row['FB_Fan_Growth_Speed'] }}</td>
+            <td>{{ row['TW_Fan_Growth_Speed'] }}</td>
+            <td>{{ row['Fan_Growth_index'] }}</td>
+          </tr>
+          {% endfor %}
+    </tbody>  
+ </table>  
+{% endblock %}
+

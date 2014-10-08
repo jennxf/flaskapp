@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+  <h2>Index</h2>
+ 
+  {% for message in form.index1.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  {% for message in form.index2.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  {% for message in form.index3.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  {% for message in form.index4.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  <form action="{{ url_for('index') }}" method=post>
+    {{ form.hidden_tag() }}
+     
+    {{ form.index1.label }}
+    {{ form.index1 }}
+     
+    {{ form.index2.label }}
+    {{ form.index2 }}
+     
+    {{ form.index3.label }}
+    {{ form.index3 }}
+     
+    {{ form.index4.label }}
+    {{ form.index4 }}
+     
+    {{ form.submit }}
+  </form>
+     
+{% endblock %}

@@ -1,0 +1,104 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "categorizing", 
+                    "sentences": [
+                        "+1    This is absolutely horrible. Id rather be back on QuickBooks 2009 for Windows where downloading transactions actually worked and you could categorize transactions quickly. This wastes so much more time now, the AMEX UI for categorizing is pathe", 
+                        "I also need to search by Country as well !", 
+                        "When I travel Abroad I can see which customer I can visit in a specific Country", 
+                        "Thanks", 
+                        "I want this feature back so bad.  We have many customers with sub-locations.  The new way is such a pain to lookup our customers information  get the right one.", 
+                        "I want to generate report of Invoices with Location group and listing of class, and all invoices including split invoices.", 
+                        "Someone please help me.", 
+                        "Yes Please....     I have thousands of products and its crazy that I cant look up products by using the description column either. Ive put up with it for years but I as soon as I find an alternative its goodbye Quickbooks. "
+                    ], 
+                    "size": 8
+                }, 
+                {
+                    "name": "download_transactions", 
+                    "sentences": [
+                        "+3.  Its more than messy looking!  For those many users who do not have bank connectivity (and thus are manually updating bank statements), any error = a major headache  reporting confusion!\n\nIf a duplicate bank statement is added by error, ther", 
+                        "Add ability to see downloaded transactions with register view.", 
+                        "I am having the same issues with multiple downloads from bank feeds.  This is a pain and in my view  seems to be a fault with the programme if others are having the same issues. I often just have to  give the entry a zero value just to get rid of it.  The", 
+                        "Please at least give us the option to keep old format. Transactions from January and Feb. dont match my bank. None of the expense categories were captured!!! I had to manually re-enter. Bank downloads do not work as well. Not happy."
+                    ], 
+                    "size": 4
+                }
+            ], 
+            "name": "report"
+        }, 
+        {
+            "children": [
+                {
+                    "name": "payment", 
+                    "sentences": [
+                        "ABSOLUTE MUST. Without multiple currency handling in US version, we will need to switch out of QBO.", 
+                        "Absolutely! There is too much risk exposure (big fees) in making us turn off CC for each invoice. It should be a global setting for on/off for each type of payment.", 
+                        "I agree. The old version of quickbooks had a link to the IPN and now we have to log in separately to pay bills. It should be easier to pay bills, just like it is easy to have a customer pay an invoice online and have direct deposit for employees. Please f", 
+                        "I need to be be able to invoice for all unbilled activities.  Its ridiculous that I have to invoice hundreds of clients one at a time.  This was a time saving feature in the older version that I really liked.  By the way, I completely despise the new", 
+                        "PLEase add this functionality of multi currency to the online US version!!!  Totaly essential", 
+                        "The emailed invoices show only the current amount due.  If you click on view invoice it will show the correct amount due with past due amounts forwarded.  BUT, if you click to pay you are not allowed to pay a penny above the current invoiced amount.  WHAT", 
+                        "This also applies to multi-currency items. I used to have unpaid bills totals in original currency in desktop version. Now i need to add various invoices to be able to pay in the right currency. Same applies to the bank items on TB. Total bank is correct ", 
+                        "This multi currency functionality is VERY important for US corporations.  PLease add ASAP!!", 
+                        "Yeah I have the same issue.  This is ridiculous that there isnt a way to refund an overpayment.  Even a check wont work because it doesnt let me take the money from the undeposited funds."
+                    ], 
+                    "size": 9
+                }, 
+                {
+                    "name": "format", 
+                    "sentences": [
+                        "Can you please create ability to add a Units column to invoices?  I have wanted this ability ever since I started using QB Online over 4 years ago.  Please.", 
+                        "Completely agree with other userss comments. Delayed charges should automatically appear on invoices (or make this a preference we can enable).\n\nIn addition, delayed charges should also be included in the unbilled activity total  list. This was ", 
+                        "Customer should be able to see invoice detail on statement and make an online payment of balance tota", 
+                        "doesnt seem too much to ask to just add custom columns to invoices. im simply trying to add an MSRP column to invoices. FAIL. ", 
+                        "I agree with many of the comments below.  To begin with the online version of quickbooks has always had weak invoicing compared to the desktop version.  I realize you are working on this.  But how long does it take?  In addition, you have taken away some ", 
+                        "I am going to lose clients if I cannot Subtotal services and expenses on my invoices!! They are simply not paying if not subtotaled", 
+                        "I am going to lose clients if I cannot Subtotal services and expenses separately on my invoices!! Clients are simply not paying if not subtotaled the invoice is being returned!!", 
+                        "I am very disappointed that the subtotal invoice feature has been removed for those that do no charge sales tax. ", 
+                        "I have multiple client bases. I need to use a different my email for each... and would actually rather NOT show my email on an invoice. Please let me REMOVE  my email from the invoice.", 
+                        "I have two companies in QB.  One was converted to online over a year ago (roughly March 2013).  My second company converted on June 1st 2014.  When my first company converted I noticed that invoice customization such as line breaks and subtotaling of serv", 
+                        "I just want to simply add a blank line to separate my invoice items.  The answer provided does not address this simple request.  I was able to do this in the old online version.", 
+                        "I need the same ting to Format Invoice", 
+                        "I totally agree with this request. I think it is a HUGE omission from QBO. What is needed is a key-word(s) and the ability to add/subtract as well.\n\ne.g. in an invoice description field:   Monthly charges for ::month-1::, ::year::  should outp", 
+                        "I work in Hawaii where General Excise Tax IS NOT SALES TAX, it is income.  State law allows a business to uplift an invoice to to recover the impact of the tax.  In QB I could use a sub-total item to sum goods and services, then apply the excise tax uplif", 
+                        "Ian - Stop complaining!  Are you kidding me?  The new QBO has some serious issues that has cost me thousands.  Emailed invoices only show current amount due, not previous amounts due.  Sure, you can click view invoice and QB will allow you to see the corr", 
+                        "Im in desperate need of sub totals in Quickbooks Online Plus!", 
+                        "In addition to subtotaling expenses versus time, the new version is no longer printing the retainer fee we have already received in the Balance Forward section and sometime is not showing payments received.  Our customers are very confused by ", 
+                        "In addition, all historic invoices prior to this update, would require to be recreated since this grouping is not allow.", 
+                        "Just moved across to quickbooks online and incredibly disappointed in how unprofessional our invoices now look, VAT registration number across two rows (etc).  Incredibly limited functionality for improving the look and detail and from reading the comment", 
+                        "My clients are refusing to pay for services because I cannot Subtotal services and expenses on my invoices!!", 
+                        "Not only to have a sales rep section for their name but an email as well. Estimates and Sales orders tend to go to the sales person while invoices go to someone different in Accounting. PLEASE, this would help out so much.", 
+                        "Please add back the feature to email invlice to my own address, not theirs. Sometimes I have to attach other documents, or I just want to attach a pdf invoice to an email sent through my own system, customized/personalized for the situation.", 
+                        "QBO Admin marked this feature request as COMPLETED in Nov 2013.. but I disagree, it is NOT completed.\n\nThe Save and send button on the invoice screen is still sending the invoice immediately without warning and without giving the user a chance to edit or ", 
+                        "Really need the old subtotal by type function back. Many of our clients require us to break out charges v expenses v time activity and the new version does not allow this.", 
+                        "really need to have the Clients info..phone number on printed estimates, invoices", 
+                        "Statements are cutting off the bottom of the footers.  We need to be able to make adjustments to the statement as well as invoices. \n\nWe should be able to add late fees in the bottom part of the invoice or statement, rather than as an activity line item. ", 
+                        "Subtotals are essential to any type of business that sells parts and labor as separate line items. ", 
+                        "Subtotals within an invoice is very important to us.  We used it all the time on the desktop version.", 
+                        "SUBTOTALS!!!  If I cannot Subtotal services and expenses separately on my invoices, clients will not pay the invoices are being returned!!", 
+                        "Terminology for not for profit organization should not be net profit or loss, but instead excess of income over expenses, etc.  Heading in Balance Sheet should read LIABILITIES AND FUND BALANCE....under that then Fund Balance and Excess Revenues (deficit)", 
+                        "thats great news that its under way. id like to add that we would like to be able to have sub sections in our estimates and invoices with sub totals, based on our own groupings.\n(ie - design group, bunch of design line items, design sub total; on site hel", 
+                        "The online version of QB is absolutely horrible when it comes to generating PDF versions of invoices! Its embarrassing sending invoices from this system. Not professional at all. When will this be updated??? PLEASE!!!!", 
+                        "The standard invoices look VERY unprofessional.  After tweaking it for 3 hours, it still does not line up or look professional and polished.  Very disappointing, as it makes my business look bad to the very clients who are paying me!  Plus the", 
+                        "The updates to-date are not even close to where this needs to be. Im creating dual invoices now because I cant send my clients the invoices that come out of QBO. Very unprofessional and I need to add in my own content. Pair up with Google Docs o", 
+                        "This is a critical option.  Without a subtotal item i cant provide my customers with their interior and exterior prices. ", 
+                        "This is an essential feature that needs to be brought back.  many companies are spending hours to recreate a historical invoice the way it appeared in the classic system.  ", 
+                        "This is soooo frustrating!! When an invoice is marked as paid, I assume it is paid! Should not have to go double check every single invoice to see if the PAID is really DECLINED!! No fix yet????", 
+                        "This upgrade is atrocious. Sub-customer info is not being fed up to the parent customer. Not only the $ subtotals but when you try to batch invoice unbilled activity, it does not pick up sub-customer billable charges. This is a disaster.", 
+                        "Vendor needs to be associated with the items received on the invoice. The field also needs to be included in the inventory reports so that you can group and sort by vendor.\n\nRight now, it is really hard to evaluate inventory changes from the moment an ite", 
+                        "We really need this feature.  It was in the desktop and I used it on many invoices.  Takes two to three times as long to post a payment in this version as in the desktop version.  Time is money and a lot of time is wasted in work arounds", 
+                        "Where is the ability to choose the from details for email messages sent through QBOs new Harmony portal?\n\nMy emailed invoices from field switched to my company name (from My Name [w/ personalized address] to Company Name [w/ donot", 
+                        "Why is this not available online?  I have been using QB for years and used this feature on every estimate I have sent out.  Why take away functionality that is so essential and so easy to code?  Please add this!!!", 
+                        "yes, yes, yes. We need subtotals and mark-ups on invoices as well...", 
+                        "Yes... we bill time as well. By employee and or vendor. Invoices have to allow grouping of employee/vendor time and subtotals of each employee/vendor as well! This shows our clients who did what and for how much."
+                    ], 
+                    "size": 44
+                }
+            ], 
+            "name": "invoice"
+        }
+    ], 
+    "name": "analytics"
+}

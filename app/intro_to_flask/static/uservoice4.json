@@ -1,0 +1,293 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "name": "devices", 
+                    "sentences": [
+                        "It would be helpful to have this feature in your Android App as well, not just iphone/ipad.", 
+                        "The Android app is worthless for me.  I have products and services with sub-items.  For example, I have a product CV, with a sub-item of L, making it CV:L.  Product CA also has the same sub-item, making it &", 
+                        "Why is this feature not available on android tablet", 
+                        "Please add this feature of scanning and attaching a expenses receipt to the Android app."
+                    ]
+                }, 
+                {
+                    "name": "feature", 
+                    "sentences": [
+                        "agreed. would also love my employees to be able to add in expenses via iPhone app with photos, and choose which client its for, without seeing the rest of the company info like our registers or vendor bills.", 
+                        "I agree it would be great to be able to access time tracking from the web on all mobile devices, and that an app wouldnt be necessary to do this. Employees who are assigned as Time Tracking Only dont appear to be able to get the app without payi", 
+                        "I also need purchase order capabilities on the iPad version.  If not, at least allow us access to the full site!", 
+                        "I couldnt agree (beg) more. The new app interface finally on me, but no longer being able to preview statements? That has caused a bad backlog on some of my client accounts where credits are common. Also difficult to assess where a problem might have", 
+                        "Mobile browser access to full website dont work anymore!", 
+                        "PLEASE ADD THIS!!!  I work on a team of 16+ folks, all in varying locations, who need to report our hours immediately after completing a job.  We all have smart phones but we dont all carry laptops.  Would be great to access this from our phones.  Th"
+                    ]
+                }
+            ], 
+            "name": "mobile"
+        }, 
+        {
+            "children": [
+                {
+                    "name": "put back", 
+                    "sentences": [
+                        "I relied on my reminders being on the home page under the old system. PLEASE PUT THEM BACK.", 
+                        "Please consider putting back one of the most important features to users of QBO.  It is cumbersome to find the list of reminders and then even more difficult and I have not found a way yet, to list the reminders that are currently due.  ", 
+                        "Please provide a notification/reminder when any tax filings or payments are ready to be transmitted. This request is for Quickbooks Online.", 
+                        "QuickBooks Desktop merchants currently receive an email in advance of any cards expiring soon.", 
+                        "So very disappointed that the Reminder/ToDo list is missing from the Home Page. I missed a very important reminder this month and had to process it 3 weeks late. Please add this back to the home page. I thought the goal was to improve the software!", 
+                        "Unless QBO support and I missed the company configuration area for this detail, Id like to see open TAX RELATED ACTIVITIES (Tasks / To Dos / Reminders) appear on my company home page. I would also like completed tax related activities remain as a vis", 
+                        "What good are reminders when you have to go looking for them???  I do not understand at all why reminders and the To Do list would not be on the home page.", 
+                        "YES this would be great - an auto reminder before its due and IF past due, too!", 
+                        "Yes.  Please.  Without those reminders on the home page, Im lost."
+                    ]
+                }
+            ], 
+            "name": "reminders"
+        }, 
+        {
+            "children": [
+                {
+                    "name": "feature", 
+                    "sentences": [
+                        "Great article link below that addresses most of the issues described. The only one it does not is how to get payroll into QBO allocated to jobs. We use Enter bills, enter the items, the hours and the rate down below in Item Details", 
+                        "I have been begging QBO to block cash flow information from limited users.  It took me a few days before I even realized they could see this information in a big green box  by that time I had short  long term employees looking for a raise.  Now ", 
+                        "No, put the payment type field in just like the desktop version. Its a weekly timesheet  screen so it should allow the choice of vacation, regular, OT, Double ot, sick days, etc.", 
+                        "Taking away this feature has completely messed up the way we do payroll! There needs to be an approval page that we can refer back to before the checks are submitted!! ", 
+                        "When we enter the employees time in the time sheet, they generally have more than 40 hours.  We have to back and manually move the OT hours to the OT field for each employee.  We are in the construction industry. In the summer, we may have from 20 to", 
+                        "Would like to be able to file payroll taxes without paying, if necessary and to make a partial payment if necessary when paying through QB."
+                    ]
+                }, 
+                {
+                    "name": "slow", 
+                    "sentences": [
+                        "I absolutely agree.  This drives me nuts and wastes my time.  Ive actually wasted deposit slips and deposited one check at a time, if you can believe it, trying to split my deposit myself so I dont run into this issue.", 
+                        "I couldnt agree more!  Was on the phone for 51 minutes with support today to find out that what I need from Quickbooks Online Payroll is no longer available.  Payroll usually takes me 6 minutes, tops!  I am so frustrated and looking at other payroll ", 
+                        "If we were using a metaphor to compare QBO payroll to QB-PC payroll, QBO would be like using an old rotary phone and QB-PC would be like using the latest i-Phone.", 
+                        "No Kidding. I waited at least one minute watching that stupid blue circle spinning.. FOR ONE PAYCHECK! We have 35 employees. You do the math :(", 
+                        "New Version = Time Suck", 
+                        "This needs to be done ASAP, payroll is now a nightmare!"
+                    ]
+                }, 
+                {
+                    "name": "sync", 
+                    "sentences": [
+                        "Agree - had a client already on Intuit Online Payroll Accts Wholesale, finally convinced them to use QuickBooks Online but now they are paying double.  Should be a way to pull in existing Intuit Online Payroll into a QuickBooks Online account."
+                    ]
+                }
+            ], 
+            "name": "payroll"
+        }, 
+        {
+            "name": "sync", 
+            "sentences": [
+                "Agreed, the sync totally sucks and is worthless just like QB for the last 2 years.  I have complained many times but no response.  I am just manually entering transactions now.  Thanks for another crappy feature QB", 
+                "If they cant integrate my wholesale Intuit Online Payroll with my clients QBO accounts, then at least let us export from IOP as IIF and import into QBO. Problem solved!", 
+                "It doesnt make sense that ProAdvisors can add QBO clients to their wholesale billing to provide a lifetime discount to their client, but cannot also link their Intuit Online Payroll with their clients QBO account. They are basically the same ser", 
+                "Offline suggestion is not a good idea  How will you synchronize data coming from different sources working online while you are working offline ?"
+            ]
+        }, 
+        {
+            "children": [
+                {
+                    "name": "recurring billing", 
+                    "sentences": [
+                        "I agree totally,  we are a Landscape company and we desperately need to be able to have progressive billing.", 
+                        "I keep getting these updates to this thread a year after I dropped QBO..They even offered  me one year at 1/2 price...But until they fix the invoice problems including the field issues and progress payment invoicing I certainly wont be back.", 
+                        "In working with the invoices set up for our customers who have payment plans I quickly saw what an inaccurate picture of our accounts receivable this paints.  As a lover of QB/Intuit, I too am shocked this function is not included.  I made note of some of", 
+                        "Recurring billing is the underlying cash flow of a business. First, you removed it from being connected to the client so we can make sure that each client has their recurring billing.  You made it so that we have to recreate all of them in order to set th"
+                    ]
+                }, 
+                {
+                    "name": "payment", 
+                    "sentences": [
+                        "ABSOLUTE MUST. Without multiple currency handling in US version, we will need to switch out of QBO.", 
+                        "Absolutely! There is too much risk exposure (big fees) in making us turn off CC for each invoice. It should be a global setting for on/off for each type of payment.", 
+                        "I agree. The old version of quickbooks had a link to the IPN and now we have to log in separately to pay bills. It should be easier to pay bills, just like it is easy to have a customer pay an invoice online and have direct deposit for employees. Please f", 
+                        "I need to be be able to invoice for all unbilled activities.  Its ridiculous that I have to invoice hundreds of clients one at a time.  This was a time saving feature in the older version that I really liked.  By the way, I completely despise the new", 
+                        "PLEase add this functionality of multi currency to the online US version!!!  Totaly essential", 
+                        "The emailed invoices show only the current amount due.  If you click on view invoice it will show the correct amount due with past due amounts forwarded.  BUT, if you click to pay you are not allowed to pay a penny above the current invoiced amount.  WHAT", 
+                        "This also applies to multi-currency items. I used to have unpaid bills totals in original currency in desktop version. Now i need to add various invoices to be able to pay in the right currency. Same applies to the bank items on TB. Total bank is correct ", 
+                        "This multi currency functionality is VERY important for US corporations.  PLease add ASAP!!", 
+                        "Yeah I have the same issue.  This is ridiculous that there isnt a way to refund an overpayment.  Even a check wont work because it doesnt let me take the money from the undeposited funds."
+                    ]
+                }, 
+                {
+                    "name": "customization", 
+                    "sentences": [
+                        "Adding spaces is HUGE for me. I need to be able to organize my invoices in sections for the client. Being able to add text in description field without having to add a new full line item is important too so I can categorize the section. \n\nAlso", 
+                        "Allow the row height on invoices to be customizable so that a description that is longer than one line can actually be read by the client!", 
+                        "Also add ability to more customize the invoice.", 
+                        "For our business, a proper size logo on the invoice is important for branding. The layout as at 2 July 2014 is mickey mouse. I also dont want payment and balance due showing on our particular invoices. Currently very disappointed ", 
+                        "I have been a QB user for a number of yrs on desktop version, thought I wanted to try and move a client to the QBOA version =(  but i cant move the client I wanted due to the constraints on the customization of Invoicing.  PLEASE PLEASE bring the QBOA cus", 
+                        "I have just started using the online version, and I am very disappointed in the comparison on my desktop version.  We need more than 3 special text boxes on our invoice, and the ability to place the text boxes in order.  ", 
+                        "I hope all the comments below is enough for QB to realise the importance of template customisation and make this a PRIORITY!", 
+                        "I NEED TO BE ABLE TO INPUT A FUEL SURCHARGE IN MY INVOICES.  WHILE USING QUICKBOOKS PRO I HAD NO ISSUES NOW THAT IM USING ONLINE ITS NOT AVAILABLE.........THIS MAKES INVOICING MUCH MORE TIME CONSUMING BECAUSE I HAVE TO ADD IT TO EACH INDIVIDUAL CHARG", 
+                        "I spent a very long and tedious time customizing my invoice with my desktop version to not have it transfer to the online version.  I will be going back to desktop until it is possible.  I do not want to confuse my clients or change our representation to ", 
+                        "I would like to be able to have different templates for my Invoices and Estimates", 
+                        "Im very unhappy with the new way my invoices print in Quickbooks online since the update.  I had it set up with the columns I needed  now it has add a price per hour  hours.  I would like to be able to customize for our business!\n ", 
+                        "Invoices are a very big representation of our Company. The templates and customization we are given to work with are substandard.  Not one of these templates allow us to center or re-size our logo (which, by the way, is way too small) and we liked the loo", 
+                        "Please allow more custom fields on the invoice. Three is not enough. Also, the ability to set the input type for each field (such as date, a dropdown list created by the user, number, etc.) would be HUGE. Thank you. ", 
+                        "Please can you look into allowing us to add customer telephone numbers on invoices. every other accounting package allows this and it is causing us endless problems", 
+                        "Terrible mistake bypassing invoice customization!  What a JOKE!! I would never send out one of their 5 templates available.\n\nMore like a kids ipad game than a professional full featured software.  ", 
+                        "The current Invoices quality and customisation  are unacceptable. Have to do everything double because I cant sent my customers the invoices generated in QBO.They look very unprofessional.\ndouble print of ABN number, cuts text of my footer, layout se", 
+                        "Totally agree with Tami. the lack of template customisation is what is holding me back from switching from QB Desktop. Invoicing is the priority for my business and until this is improved on the online version i will be sticking to the desktop version."
+                    ]
+                }, 
+                {
+                    "name": "format", 
+                    "sentences": [
+                        "Can you please create ability to add a Units column to invoices?  I have wanted this ability ever since I started using QB Online over 4 years ago.  Please.", 
+                        "Completely agree with other userss comments. Delayed charges should automatically appear on invoices (or make this a preference we can enable).\n\nIn addition, delayed charges should also be included in the unbilled activity total  list. This was ", 
+                        "Customer should be able to see invoice detail on statement and make an online payment of balance tota", 
+                        "doesnt seem too much to ask to just add custom columns to invoices. im simply trying to add an MSRP column to invoices. FAIL. ", 
+                        "I agree with many of the comments below.  To begin with the online version of quickbooks has always had weak invoicing compared to the desktop version.  I realize you are working on this.  But how long does it take?  In addition, you have taken away some ", 
+                        "I am going to lose clients if I cannot Subtotal services and expenses on my invoices!! They are simply not paying if not subtotaled", 
+                        "I am going to lose clients if I cannot Subtotal services and expenses separately on my invoices!! Clients are simply not paying if not subtotaled the invoice is being returned!!", 
+                        "I am very disappointed that the subtotal invoice feature has been removed for those that do no charge sales tax. ", 
+                        "I have multiple client bases. I need to use a different my email for each... and would actually rather NOT show my email on an invoice. Please let me REMOVE  my email from the invoice.", 
+                        "I have two companies in QB.  One was converted to online over a year ago (roughly March 2013).  My second company converted on June 1st 2014.  When my first company converted I noticed that invoice customization such as line breaks and subtotaling of serv", 
+                        "I just want to simply add a blank line to separate my invoice items.  The answer provided does not address this simple request.  I was able to do this in the old online version.", 
+                        "I need the same ting to Format Invoice", 
+                        "I totally agree with this request. I think it is a HUGE omission from QBO. What is needed is a key-word(s) and the ability to add/subtract as well.\n\ne.g. in an invoice description field:   Monthly charges for ::month-1::, ::year::  should outp", 
+                        "I work in Hawaii where General Excise Tax IS NOT SALES TAX, it is income.  State law allows a business to uplift an invoice to to recover the impact of the tax.  In QB I could use a sub-total item to sum goods and services, then apply the excise tax uplif", 
+                        "Ian - Stop complaining!  Are you kidding me?  The new QBO has some serious issues that has cost me thousands.  Emailed invoices only show current amount due, not previous amounts due.  Sure, you can click view invoice and QB will allow you to see the corr", 
+                        "Im in desperate need of sub totals in Quickbooks Online Plus!", 
+                        "In addition to subtotaling expenses versus time, the new version is no longer printing the retainer fee we have already received in the Balance Forward section and sometime is not showing payments received.  Our customers are very confused by ", 
+                        "In addition, all historic invoices prior to this update, would require to be recreated since this grouping is not allow.", 
+                        "Just moved across to quickbooks online and incredibly disappointed in how unprofessional our invoices now look, VAT registration number across two rows (etc).  Incredibly limited functionality for improving the look and detail and from reading the comment", 
+                        "My clients are refusing to pay for services because I cannot Subtotal services and expenses on my invoices!!", 
+                        "Not only to have a sales rep section for their name but an email as well. Estimates and Sales orders tend to go to the sales person while invoices go to someone different in Accounting. PLEASE, this would help out so much.", 
+                        "Please add back the feature to email invlice to my own address, not theirs. Sometimes I have to attach other documents, or I just want to attach a pdf invoice to an email sent through my own system, customized/personalized for the situation.", 
+                        "QBO Admin marked this feature request as COMPLETED in Nov 2013.. but I disagree, it is NOT completed.\n\nThe Save and send button on the invoice screen is still sending the invoice immediately without warning and without giving the user a chance to edit or ", 
+                        "Really need the old subtotal by type function back. Many of our clients require us to break out charges v expenses v time activity and the new version does not allow this.", 
+                        "really need to have the Clients info..phone number on printed estimates, invoices", 
+                        "Statements are cutting off the bottom of the footers.  We need to be able to make adjustments to the statement as well as invoices. \n\nWe should be able to add late fees in the bottom part of the invoice or statement, rather than as an activity line item. ", 
+                        "Subtotals are essential to any type of business that sells parts and labor as separate line items. ", 
+                        "Subtotals within an invoice is very important to us.  We used it all the time on the desktop version.", 
+                        "SUBTOTALS!!!  If I cannot Subtotal services and expenses separately on my invoices, clients will not pay the invoices are being returned!!", 
+                        "Would love to have Quantity Ordered, Quantity Shipped and Quantity Backordered Columns on Invoices.  We manufacture building materials and some times we shipped more lineal footage than is ordered and some times we have to backorder items.  As it is, we h", 
+                        "Terminology for not for profit organization should not be net profit or loss, but instead excess of income over expenses, etc.  Heading in Balance Sheet should read LIABILITIES AND FUND BALANCE....under that then Fund Balance and Excess Revenues (deficit)", 
+                        "thats great news that its under way. id like to add that we would like to be able to have sub sections in our estimates and invoices with sub totals, based on our own groupings.\n(ie - design group, bunch of design line items, design sub total; on site hel", 
+                        "The online version of QB is absolutely horrible when it comes to generating PDF versions of invoices! Its embarrassing sending invoices from this system. Not professional at all. When will this be updated??? PLEASE!!!!", 
+                        "The standard invoices look VERY unprofessional.  After tweaking it for 3 hours, it still does not line up or look professional and polished.  Very disappointing, as it makes my business look bad to the very clients who are paying me!  Plus the", 
+                        "The updates to-date are not even close to where this needs to be. Im creating dual invoices now because I cant send my clients the invoices that come out of QBO. Very unprofessional and I need to add in my own content. Pair up with Google Docs o", 
+                        "This is a critical option.  Without a subtotal item i cant provide my customers with their interior and exterior prices. ", 
+                        "This is an essential feature that needs to be brought back.  many companies are spending hours to recreate a historical invoice the way it appeared in the classic system.  ", 
+                        "This is soooo frustrating!! When an invoice is marked as paid, I assume it is paid! Should not have to go double check every single invoice to see if the PAID is really DECLINED!! No fix yet????", 
+                        "This upgrade is atrocious. Sub-customer info is not being fed up to the parent customer. Not only the $ subtotals but when you try to batch invoice unbilled activity, it does not pick up sub-customer billable charges. This is a disaster.", 
+                        "Vendor needs to be associated with the items received on the invoice. The field also needs to be included in the inventory reports so that you can group and sort by vendor.\n\nRight now, it is really hard to evaluate inventory changes from the moment an ite", 
+                        "We really need this feature.  It was in the desktop and I used it on many invoices.  Takes two to three times as long to post a payment in this version as in the desktop version.  Time is money and a lot of time is wasted in work arounds", 
+                        "Where is the ability to choose the from details for email messages sent through QBOs new Harmony portal?\n\nMy emailed invoices from field switched to my company name (from My Name [w/ personalized address] to Company Name [w/ donot", 
+                        "Why is this not available online?  I have been using QB for years and used this feature on every estimate I have sent out.  Why take away functionality that is so essential and so easy to code?  Please add this!!!", 
+                        "yes, yes, yes. We need subtotals and mark-ups on invoices as well...", 
+                        "Yes... we bill time as well. By employee and or vendor. Invoices have to allow grouping of employee/vendor time and subtotals of each employee/vendor as well! This shows our clients who did what and for how much."
+                    ]
+                }
+            ], 
+            "name": "invoice"
+        }, 
+        {
+            "children": [
+                {
+                    "name": "categorizing", 
+                    "sentences": [
+                        "+1    This is absolutely horrible. Id rather be back on QuickBooks 2009 for Windows where downloading transactions actually worked and you could categorize transactions quickly. This wastes so much more time now, the AMEX UI for categorizing is pathe", 
+                        "I also need to search by Country as well !", 
+                        "When I travel Abroad I can see which customer I can visit in a specific Country", 
+                        "Thanks", 
+                        "I want this feature back so bad.  We have many customers with sub-locations.  The new way is such a pain to lookup our customers information  get the right one.", 
+                        "I want to generate report of Invoices with Location group and listing of class, and all invoices including split invoices.", 
+                        "Someone please help me.", 
+                        "Yes Please....     I have thousands of products and its crazy that I cant look up products by using the description column either. Ive put up with it for years but I as soon as I find an alternative its goodbye Quickbooks. "
+                    ]
+                }, 
+                {
+                    "name": "download transactions", 
+                    "sentences": [
+                        "+3.  Its more than messy looking!  For those many users who do not have bank connectivity (and thus are manually updating bank statements), any error = a major headache  reporting confusion!\n\nIf a duplicate bank statement is added by error, ther", 
+                        "Add ability to see downloaded transactions with register view.", 
+                        "I am having the same issues with multiple downloads from bank feeds.  This is a pain and in my view  seems to be a fault with the programme if others are having the same issues. I often just have to  give the entry a zero value just to get rid of it.  The", 
+                        "Please at least give us the option to keep old format. Transactions from January and Feb. dont match my bank. None of the expense categories were captured!!! I had to manually re-enter. Bank downloads do not work as well. Not happy."
+                    ]
+                }
+            ], 
+            "name": "report"
+        }, 
+        {
+            "children": [
+                {
+                    "name": "too many clicks", 
+                    "sentences": [
+                        " The current click, click, click, click, click... by mouse is a painful waste of time!", 
+                        "Fully agree. In the desktop version one could scroll up  down with the arrow keys and use the spacebar to mark an item cleared. No pro", 
+                        "I 100% agree!  It is extremely frustrating to have to continue to go back to the customer page and re-enter the same info to choose the next customer on the list.  This increases my time trying to find the right customer exponentially.  The original was m", 
+                        "I agree!!!! I found this very frustrating today. You used to be able to find customer service phone numbers much easier. It took me 10 minutes to find where it was buried and at that point I had hit a nice level of frustration. ", 
+                        "I postponed converting until I had no choice.  You promised less clicks to perform my tasks, but alas, it takes many more and shows less information.   Who complained about the old UI and who told you users wanted this?!", 
+                        "I totally agree with this!  I have to click twice as many times to get to something than I did in the old version.  And I dont understand why there isnt a Banking Menu.  This version is confusing.", 
+                        "I, too am wasting way too much of my time trying to navigate the added clicks.  I need to get in and get the work done is short order.  I am very discussed with the changes and will probably have to drop the online version and go back to the standard Quic", 
+                        "I, too, do not have the time to figure out how to do this.  I wind up wasting much time trying to invoice customers.  I used to go down the list and invoice each. Now I have to get out of each customer before I can go to the next.  Horrible waste of my ti", 
+                        "Instead of clicking, just use keyboard shortcuts; it is way faster. For example, CTL + ALT + I will create a new invoice, CTL + ALT + W will create a new check, etc. similar to QuickBooks for Desktop.", 
+                        "QBOJoe.com says that multiple transactions can be selected in the bank reconciliation window by clicking one, and then holding shift and clicking another above or below. All transactions in between will be selected. This is much better than click click cl", 
+                        "There is nothing improved with this new system, in fact, it is 1,000,000 times worse!!!!  What used to take 20 minutes, now takes 12 hours and several calls to QB for help............seriously, what moron thought this up???", 
+                        "Whilst trying to interact with customers face to face, this choice set as a default exclusive which in Australia is the least used system is very damaging for the flow of processing customers transactions. especially when just clicking on it to change it "
+                    ]
+                }, 
+                {
+                    "name": "search", 
+                    "sentences": [
+                        "I really need this feature back as well.  The previous version allowed us to search by contact name and company name.  I have one client that has changed company names 4 times so it is best to search by name or I just know the persons name but can&#3", 
+                        "OMG! I so agree with this! Im so sick of scrolling through every Vendor name that has the same letter in the one Im trying to find. PLEASE bring back the Alphabet on the Vendor List!!", 
+                        "They have a flexible search for finding customers, but not for items. We are keeping our desktop version active so we can use the old item list search. How crazy is that?"
+                    ]
+                }, 
+                {
+                    "name": "size", 
+                    "sentences": [
+                        "I notice on my desktop that each page of the register is bigger than the screen, so I have to scroll just to look at that one page.  Having access to the whole register at once would be handy, I agree."
+                    ]
+                }
+            ], 
+            "name": "navigation"
+        }, 
+        {
+            "children": [
+                {
+                    "name": "convert", 
+                    "sentences": [
+                        "Emphatically agree with all of you. I will not buy into the online version until this is offered. There is a similar request for Sales a Order with more traction, but it does not talk about data transfer which is such a useful tool. ", 
+                        "Emphatically agree, and like the desktop version you should be able to convert the a Sales order to a Purchase Order for ease of ordering.  Sadly this topic has been started at least a dozen times so the voting is split and this is not getting as much tra", 
+                        "Purchase orders from Sales Orders or Estimates is a necessary function of most retail operations, and this request is listed several times in slightly different ways so while we are asking for the same thing we are not getting traction, and unlike other f", 
+                        "You should also be able to turn an estimate into a purchase order for ease of ordering like the desktop version"
+                    ]
+                }, 
+                {
+                    "name": "fomat", 
+                    "sentences": [
+                        "There are fields on the PO entry screen that I dont need on the PO form.  In addition there are additional fields that I entered, e.g., ship to attn: that do not appear on the PO.  This form is not very user friendly.", 
+                        "This is a minor but tremendously annoying bug.  Therefore its priority should be high.   I am SO frustrated by this.  Desktop QB always had the PO number with billable expenses.  You dont necessarily lose your changes.  If like me you have to dr"
+                    ]
+                }, 
+                {
+                    "name": "customization", 
+                    "sentences": [
+                        "How can you not have an option to partially receive a PO.  Defiantly a necessity!", 
+                        "Need to edit template on purchase orders.", 
+                        "More a necessity for us!  We seldom get stock delivered exactly as purchase order, usually something on back order, works OK on desktop! why not online?", 
+                        "Most of our customers have multiple jobs/POs going at the same time.  We need to have a way to show this.  I have been using the country box and its working for me.", 
+                        "Need to be able to receive partial deliveries against purchase orders, works great on desktop...why not online", 
+                        "Purchase orders forms should be able to customize please.", 
+                        "This seems like this would be so logical and already in place.  Many, Many purchase orders have back ordered items.  Its silly that QBO doesnt do this.  If I could vote 100 times for this, I would."
+                    ]
+                }, 
+                {
+                    "name": "format", 
+                    "sentences": [
+                        "Well I am new to QBO but I do not understand why the PO have Rate and Tax Column in it. Since this is a order for purchase of some products from supplier the prize may vary from time to time and dictated by the supplier . How can I we upfront put a purcha"
+                    ]
+                }
+            ], 
+            "name": "Purchase Orders"
+        }
+    ], 
+    "name": "analytics"
+}

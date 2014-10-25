@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.nodeleaf {
+  cursor: pointer;
+  fill: white;
+  
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.label {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 120;
+  letter-spacing: 3px;
+  text-anchor: middle;
+  color:#fff;
+  /* use two shadows, the first the same colour as the text,
+   * the second a darker colour (in this case white and yellow).
+   * Both have no x or y offset, the blur you apply to the
+   * shadow will determine how big the glow effect is
+   */
+  text-shadow:0 0 30px #fff, 0 0 70px #0000ee;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+#sentences {
+  font: 16px "Calibri", Helvetica, Arial, sans-serif;
+  color: #FFF;
+}
+</style>
+
+<body>
+    <script src="http://d3js.org/d3.v3.min.js">
+    </script>
+    <div id="container">
+        <div id="svg_container" style="float:left; width: 50%">
+        </div>
+        <div id="sentences_container" style="float: left; width: 48%">
+            <h1 style="font-size: 48px; color: white;">
+            Text Analytics D3 Viz for User Voice Data
+            </h1>
+            <div id="sentences" style="font-size: 20px; height: 70vh; overflow: scroll;">
+            </div>
+        </div>
+    </div>
+    <script>
+        /* Sets the width and height of the svg canvas.
+         * They won't have to be dynamically adjusted; since
+         * setting a Viewbox attribute on svg would allow
+         * dynamic resizing without changing the coordinates
+         * within.
+         */
+        var width = 512,
+            height = 512,
+            margin = 16;
+
+        /* Sets the color of the circles.
+         * i is expected to be within [-1, 2].
+         */
+        var color = function(i) {
+            var colors = ["#0066cc", "#0080ff", "#66b2ff", "#c0c010"];
+            return colors[i + 1];
+        }
+
+        /* Creates a packing layout.
+         * The value function decides the relative size
+         * of each circle; in this case, it's determined
+         * by the length of the sentences array.
+         */
+        var pack = d3.layout.pack()
+            .padding(4)
+            .size([width, height])
+            .value(function(d) {
+                return d.sentences.length;
+            });
+
+        /* Creates an svg element.
+         * Viewbox allows resizing of svg without changing
+         * the absolute coordinates of the elements within.
+         */
+        var svg = d3.select("#svg_container").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("viewBox", "0 0 " + width + " " + height)
+            .attr("preserveAspectRatio", "xMinYMin");
+
+        /* A g element is added to contain all
+         * subsequent elements. It allows us to
+         * position all elements relative to the
+         * middle of the svg canvas.
+         */
+        var svgg = svg.append("g");
+
+        var svg_container = document.getElementById("svg_container");
+        function resizeSvg() {
+            var aspect = width / height;
+            var targetWidth = svg_container.offsetWidth;
+            var targetHeight = targetWidth / aspect;
+            svg.attr("width", targetWidth);
+            svg.attr("height", targetHeight);
+            /* Note that because of use of Viewbox
+             * (which permits resizing while preserving
+             * original coordinates), our translation still
+             * uses the original width and height.
+             */
+            svgg.attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
+        }
+        window.addEventListener("resize", resizeSvg);
+        resizeSvg();
+
+        d3.json("static/uservoice4.json", function(error, root) {
+            if (error) {
+                return console.error(error);
+            }
+
+            /* d3.json reads the specified json file and gives us
+             * the root of the tree data structure in it.
+             * pack.nodes takes a root and returns an array of all
+             * the nodes in the tree.
+             * pack.links takes an array of nodes (as returned from
+             * pack.nodes) and returns an array of links connecting
+             * a node and its children.
+             */
+            var focus = root,
+                currentViewVector,
+                zooming = false,
+                nodes = pack.nodes(root),
+                links = pack.links(nodes);
+                
+            /* Given nodes (that have not been entered yet),
+             * creates a circle element for each such node.
+             * Each circle is imbued with different attributes
+             * depending on the type of its corresponding node:
+             * root, intermediate node, or leaf node.
+             */
+            var circles = svgg.selectAll("circle")
+                .data(nodes)
+                .enter().append("circle")
+                    .attr("class", function(node) {
+                        /* We return a class depending on whether
+                         * the given node is the root, an intermediate
+                         * node, or a leaf node.
+                         * How to determine the type of a node:
+                         *  root: has no parent.
+                         *  intermediate node: has parent and children.
+                         *  leaf node: has parent but no children.
+                         */
+                        if (node.parent) {
+                            if (node.children) {
+                                return "node";
+                            }
+                            else {
+                                return "nodeleaf";
+                            }
+                        }
+                        else {
+                            return "node node--root";
+                        }
+                    })
+                    .attr("r", function(node) {
+                        return node.r;
+                    })
+                    .style("fill", function(node) {
+                        if (node.children) {
+                            return color(node.depth);
+                        }
+                        return null;
+                    })
+                    .on("click", function(node) {
+                        if (focus !== node) {
+                            zoom(node);
+                        }
+                        d3.event.stopPropagation();
+                    });
+
+                var leafCircles = svg.selectAll("circle.nodeleaf")
+                    .on("click", function(node) {
+                        zoom(node.parent);
+                        displaySentences(node);
+                        d3.event.stopPropagation();
+                    });
+
+                /* Given nodes (that have not been entered yet),
+                 * creates a text element for each such node.
+                 * These text elements serve as labels for the
+                 * circles.
+                 */
+                var labels = svgg.selectAll("text")
+                    .data(nodes)
+                    .enter().append("text")
+                        .attr("class", "label")
+                        .style("fill-opacity", function(node) {
+                            if (node.parent == root) {
+                                return 1;
+                            }
+                            return 0;
+                        })
+                        .style("display", function(node) {
+                            if (node.parent == root) {
+                                return null;
+                            }
+                            return "none";
+                        })
+                        .text(function(node) {
+                            node.label = this;
+                            return node.name;
+                        });
+
+                var movables = svgg.selectAll("circle,text");
+
+                function xformTranslate(node) {
+                    //var viewVector = node.viewVector;
+                    var viewVector = currentViewVector;
+                    //if (node.viewVector === undefined) {
+                    //    viewVector = currentViewVector;
+                    //}
+                    var dx = node.dx;
+                    var dy = node.dy;
+                    if (node.dx === undefined) {
+                        dx = 0;
+                    }
+                    if (node.dy === undefined) {
+                        dy = 0;
+                    }
+                    if (node === root) {
+                        dx = 0;
+                        dy = 0;
+                    }
+                    var centerX = viewVector[0],
+                        centerY = viewVector[1],
+                        viewportSize = viewVector[2];
+                    var multiplier = width / viewportSize;
+                    node.multiplier = multiplier;
+                    return "translate(" + ((dx + node.x - centerX) * multiplier) + ", " + ((dy + node.y - centerY) * multiplier) + ")";
+                }
+
+                var jiggling = false;
+                function jiggleCircles() {
+                    var jiggle = d3.transition().selectAll("circle")
+                    .duration(1000)
+                    .ease("linear")
+                    .tween("jiggling", function(node) {
+                        jiggling = true;
+                        var dx = Math.random() * 10 - 5;
+                        var dy = Math.random() * 10 - 5;
+                        var old_dx = (node.dx === undefined) ? 0 : node.dx;
+                        var old_dy = (node.dy === undefined) ? 0 : node.dy;
+                        var interpX = d3.interpolate(old_dx, dx);
+                        var interpY = d3.interpolate(old_dy, dy);
+                        var interpX2 = function(t) {
+                            if (t < 0.5) {
+                                return interpX(t * 2);
+                            }
+                            else {
+                                return interpX(1 - 2 * (t - 0.5));
+                            }
+                        };
+                        var interpY2 = function(t) {
+                            if (t < 0.5) {
+                                return interpY(t * 2);
+                            }
+                            else {
+                                return interpY(1 - 2 * (t - 0.5));
+                            }
+                        };
+                        return function(t) {
+                            node.dx = interpX(t);
+                            node.dy = interpY(t);
+                            var xtrans = xformTranslate(node);
+                            d3.select(this).attr("transform", xtrans);
+                            d3.select(node.label).attr("transform", xtrans);
+                            d3.select(this).attr("r", function(node) {
+                                return node.r * node.multiplier;
+                            });
+                        };
+                    })
+                    .each("end", function(node) {
+                        //jiggleCircles();
+                        jiggling = false;
+                    });
+                };
+                d3.timer(function() {
+                    if (jiggling == false) {
+                        jiggleCircles();
+                    }
+                    return false;
+                });
+
+                function zoom(node) {
+                    document.getElementById("sentences").innerHTML = "";
+                    focus = node;
+                    var transition = d3.transition()
+                        .duration(750)
+                        .tween("zoom", function(node) {
+                            var interpolator = d3.interpolateZoom(currentViewVector, [focus.x, focus.y, focus.r * 2 + margin]);
+                            return function(t) {
+                                console.log(t + "");
+                                zoomTo(interpolator(t));
+                            };
+                        });
+
+                    transition.selectAll("text")
+                        .filter(function(node) {
+                            return node.parent === focus || this.style.display === "inline";
+                        })
+                        .style("fill-opacity", function(node) {
+                            /* If we're the children members of the
+                             * node currently in focus, then make
+                             * ourselves visible. Otherwise invisible.
+                             */
+                            if (node.parent === focus) {
+                                return 1;
+                            }
+                            return 0;
+                        })
+                        .each("start", function(node) {
+                            if (node.parent === focus) {
+                                this.style.display = "inline";
+                            }
+                        })
+                        .each("end", function(node) {
+                            if (node.parent !== focus) {
+                                this.style.display = "none";
+                            }
+                        });
+                }
+
+                d3.select("body")
+                    .style("background", color(-1))
+                    .on("click", function() {
+                        zoom(root);
+                    });
+
+                zoomTo([root.x, root.y, root.r * 2 + margin]);
+
+                function zoomTo(viewVector) {
+                    var centerX = viewVector[0],
+                        centerY = viewVector[1],
+                        viewportSize = viewVector[2];
+                    var multiplier = width / viewportSize;
+                    currentViewVector = viewVector;
+                    /*
+                    movables.attr("transform", function(node) {
+                        node.viewVector = viewVector;
+                        return xformTranslate(node);
+                    });
+                    
+                    circles.attr("r", function(node) {
+                        return node.r * multiplier;
+                    });
+                    */
+                }
+
+                function displaySentences(node) {
+                    var sentencesDiv = document.getElementById("sentences");
+                    var innerHTML = "<ol>";
+                    for (i = 0; i < node.sentences.length; ++i) {
+                        innerHTML += "<li><p>" + node.sentences[i] + "</p></li>";
+                    }
+                    innerHTML += "</ol>";
+                    sentencesDiv.innerHTML = innerHTML;
+                }
+
+        });
+    </script>
+
+</body>

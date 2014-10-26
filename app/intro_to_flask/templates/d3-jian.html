@@ -259,8 +259,8 @@
                     .ease("linear")
                     .tween("jiggling", function(node) {
                         jiggling = true;
-                        var dx = Math.random() * 10 - 5;
-                        var dy = Math.random() * 10 - 5;
+                        var dx = Math.random() * 8 - 4;
+                        var dy = Math.random() * 8 - 4;
                         var old_dx = (node.dx === undefined) ? 0 : node.dx;
                         var old_dy = (node.dy === undefined) ? 0 : node.dy;
                         var interpX = d3.interpolate(old_dx, dx);
@@ -289,7 +289,7 @@
                             d3.select(node.label).attr("transform", xtrans);
                             d3.select(this).attr("r", function(node) {
                                 return node.r * node.multiplier;
-                            });
+                              });
                         };
                     })
                     .each("end", function(node) {
@@ -307,12 +307,18 @@
                 function zoom(node) {
                     document.getElementById("sentences").innerHTML = "";
                     focus = node;
-                    var transition = d3.transition()
+                    /* Note: there can only be one transition applied
+                     * to one selection at a time; selecting g instead
+                     * of circle,text allows us to run two transitions
+                     * at once, with the jiggler taking care of the
+                     * actual zooming for us (we only do zoom and pan
+                     * interpolation calculations here).
+                     */
+                    var transition = d3.transition().select("g")
                         .duration(750)
                         .tween("zoom", function(node) {
                             var interpolator = d3.interpolateZoom(currentViewVector, [focus.x, focus.y, focus.r * 2 + margin]);
                             return function(t) {
-                                console.log(t + "");
                                 zoomTo(interpolator(t));
                             };
                         });

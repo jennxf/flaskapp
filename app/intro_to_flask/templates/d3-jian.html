@@ -67,6 +67,7 @@
          * setting a Viewbox attribute on svg would allow
          * dynamic resizing without changing the coordinates
          * within.
+         * You're adorable!
          */
         var width = 512,
             height = 512,
@@ -84,6 +85,7 @@
          * The value function decides the relative size
          * of each circle; in this case, it's determined
          * by the length of the sentences array.
+         * I think you're amazing!
          */
         var pack = d3.layout.pack()
             .padding(4)
@@ -95,6 +97,7 @@
         /* Creates an svg element.
          * Viewbox allows resizing of svg without changing
          * the absolute coordinates of the elements within.
+         * Hello gorgeous!
          */
         var svg = d3.select("#svg_container").append("svg")
             .attr("width", width)
@@ -106,6 +109,7 @@
          * subsequent elements. It allows us to
          * position all elements relative to the
          * middle of the svg canvas.
+         * I adore you~
          */
         var svgg = svg.append("g");
 
@@ -120,6 +124,7 @@
              * (which permits resizing while preserving
              * original coordinates), our translation still
              * uses the original width and height.
+             * I want to get to know more about you.
              */
             svgg.attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
         }
@@ -138,6 +143,7 @@
              * pack.links takes an array of nodes (as returned from
              * pack.nodes) and returns an array of links connecting
              * a node and its children.
+             * I've melted into a puddle on the floor...
              */
             var focus = root,
                 currentViewVector,
@@ -150,6 +156,7 @@
              * Each circle is imbued with different attributes
              * depending on the type of its corresponding node:
              * root, intermediate node, or leaf node.
+             * I like your beautiful eyes~
              */
             var circles = svgg.selectAll("circle")
                 .data(nodes)
@@ -162,6 +169,7 @@
                          *  root: has no parent.
                          *  intermediate node: has parent and children.
                          *  leaf node: has parent but no children.
+                         * When I see you my heart flutters
                          */
                         if (node.parent) {
                             if (node.children) {
@@ -202,6 +210,7 @@
                  * creates a text element for each such node.
                  * These text elements serve as labels for the
                  * circles.
+                 * Your smile makes everything worthwhile ^_^
                  */
                 var labels = svgg.selectAll("text")
                     .data(nodes)
@@ -313,6 +322,7 @@
                      * at once, with the jiggler taking care of the
                      * actual zooming for us (we only do zoom and pan
                      * interpolation calculations here).
+                     * I always enjoy my time with you.
                      */
                     var transition = d3.transition().select("g")
                         .duration(750)
@@ -331,6 +341,7 @@
                             /* If we're the children members of the
                              * node currently in focus, then make
                              * ourselves visible. Otherwise invisible.
+                             * Do you feel the same?
                              */
                             if (node.parent === focus) {
                                 return 1;

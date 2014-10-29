@@ -22,7 +22,7 @@
 }
 
 .label {
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 120;
   letter-spacing: 3px;
   text-anchor: middle;
@@ -42,7 +42,7 @@
 }
 
 #sentences {
-  font: 16px "Calibri", Helvetica, Arial, sans-serif;
+  font: 14px "Calibri", Helvetica, Arial, sans-serif;
   color: #FFF;
 }
 </style>
@@ -54,10 +54,20 @@
         <div id="svg_container" style="float:left; width: 50%">
         </div>
         <div id="sentences_container" style="float: left; width: 48%">
-            <h1 style="font-size: 48px; color: white;">
+            <h1 style="font-size: 50px; color: white;">
             Text Analytics D3 Viz for User Voice Data
             </h1>
-            <div id="sentences" style="font-size: 20px; height: 70vh; overflow: scroll;">
+            <div id="sentences" style="font-size: 20px; height: 70vh; overflow: scroll; display: none;"> 
+            </div>
+            <div id="introduction" style="font-size: 20px; height: 70vh; overflow: scroll; display: inline;">
+              <p style="font-family :'Lucida Console' , Monaco, monospace; font-size: 35px; text-align: justify; color:white;">
+            User Voice is an in-product feedback and feature request tool where users can provide 
+            comments or vote on comments by other users. <br /> <br />This helps product developers and managers prioritize on key features to build or bugs to fix.<br /><br />
+              </p>
+            <p style="font-family :'Lucida Console' , Monaco, monospace; font-size: 35px; text-align: justify; color : #00FF00;" >
+              Click on the circles to view sentences
+            </p>
+            
             </div>
         </div>
     </div>
@@ -353,6 +363,7 @@
                     .style("background", color(-1))
                     .on("click", function() {
                         zoom(root);
+                        displaySentences(root);
                     });
 
                 zoomTo([root.x, root.y, root.r * 2 + margin]);
@@ -376,13 +387,23 @@
                 }
 
                 function displaySentences(node) {
-                    var sentencesDiv = document.getElementById("sentences");
+                  var sentencesDiv = document.getElementById("sentences");
+                  var introductionDiv = document.getElementById("introduction");
+                  if (node === root) {
+                    console.log("hello");
+                    sentencesDiv.style.display = "none";
+                    introductionDiv.style.display = "inline";
+                  }
+                  else {
                     var innerHTML = "<ol>";
                     for (i = 0; i < node.sentences.length; ++i) {
                         innerHTML += "<li><p>" + node.sentences[i] + "</p></li>";
                     }
                     innerHTML += "</ol>";
                     sentencesDiv.innerHTML = innerHTML;
+                    sentencesDiv.style.display = "inline";
+                    introductionDiv.style.display = "none";
+                  }
                 }
 
         });

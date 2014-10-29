@@ -140,7 +140,7 @@ def signout():
 
 @app.route('/d3')
 def d3():
-  return render_template('d3.html')
+  return render_template('d3-jian.html')
 
 
 # #let's create ourselves a new route

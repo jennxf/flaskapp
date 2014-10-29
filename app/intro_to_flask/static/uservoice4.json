@@ -264,7 +264,9 @@
                     "name": "fomat", 
                     "sentences": [
                         "There are fields on the PO entry screen that I dont need on the PO form.  In addition there are additional fields that I entered, e.g., ship to attn: that do not appear on the PO.  This form is not very user friendly.", 
-                        "This is a minor but tremendously annoying bug.  Therefore its priority should be high.   I am SO frustrated by this.  Desktop QB always had the PO number with billable expenses.  You dont necessarily lose your changes.  If like me you have to dr"
+                        "This is a minor but tremendously annoying bug.  Therefore its priority should be high.   I am SO frustrated by this.  Desktop QB always had the PO number with billable expenses.  You dont necessarily lose your changes.  If like me you have to dr",
+                        "Well I am new to QBO but I do not understand why the PO have Rate and Tax Column in it. Since this is a order for purchase of some products from supplier the prize may vary from time to time and dictated by the supplier . How can we put a purchase order upfront"
+
                     ]
                 }, 
                 {
@@ -277,12 +279,6 @@
                         "Need to be able to receive partial deliveries against purchase orders, works great on desktop...why not online", 
                         "Purchase orders forms should be able to customize please.", 
                         "This seems like this would be so logical and already in place.  Many, Many purchase orders have back ordered items.  Its silly that QBO doesnt do this.  If I could vote 100 times for this, I would."
-                    ]
-                }, 
-                {
-                    "name": "format", 
-                    "sentences": [
-                        "Well I am new to QBO but I do not understand why the PO have Rate and Tax Column in it. Since this is a order for purchase of some products from supplier the prize may vary from time to time and dictated by the supplier . How can I we upfront put a purcha"
                     ]
                 }
             ], 

@@ -59,7 +59,7 @@
             </h1>
             <div id="sentences" style ="height: 70vh; overflow: scroll; display: none;"> 
             </div>
-            <div id="introduction" style="font-size: 20px; height: 70vh; overflow: scroll; display: inline;">
+            <div id="introduction" style="font-size: 20px; height: 70vh; overflow: scroll; display: block;">
               <p style="font-family :'Lucida Console' , Monaco, monospace; font-size: 35px; text-align: justify; color:white;">
              <br /> <br />This is a chart displaying QBO product related comments. <br /> <br />The light blue circle represents categories while the white circles represent <br /> sub-categories.
               </p>
@@ -400,9 +400,8 @@
                   var sentencesDiv = document.getElementById("sentences");
                   var introductionDiv = document.getElementById("introduction");
                   if (node === root) {
-                    console.log("hello");
                     sentencesDiv.style.display = "none";
-                    introductionDiv.style.display = "inline";
+                    introductionDiv.style.display = "block";
                   }
                   else {
                     var innerHTML = "<ol>";
@@ -411,7 +410,7 @@
                     }
                     innerHTML += "</ol>";
                     sentencesDiv.innerHTML = innerHTML;
-                    sentencesDiv.style.display = "inline";
+                    sentencesDiv.style.display = "block";
                     introductionDiv.style.display = "none";
                   }
                 }
